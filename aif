@@ -1753,7 +1753,7 @@ install_network_menu() {
 install_wireless_packages(){
 
 	WIRELESS_PACKAGES=""
-	wireless_pkgs="dialog iw rp-pppoe wireless_tools wpa_actiond"
+	wireless_pkgs="dialog iw rp-pppoe wireless_tools"
 	
 	for i in ${wireless_pkgs}; do
 		WIRELESS_PACKAGES="${WIRELESS_PACKAGES} ${i} - on"
@@ -1771,7 +1771,7 @@ install_wireless_packages(){
 	"bluez-firmware" "Broadcom BCM203x / STLC2300 Bluetooth" off \
 	"ipw2100-fw" "Intel PRO/Wireless 2100" off \
 	"ipw2200-fw" "Intel PRO/Wireless 2200" off \
-	"zd1211-firmware" "ZyDAS ZD1211(b) 802.11a/b/g USB WLAN" off 2>${PACKAGES}
+        "ZyDAS ZD1211(b) 802.11a/b/g USB WLAN" off 2>${PACKAGES}
 	
 	if [[ $(cat ${PACKAGES}) != "" ]]; then
 		clear
