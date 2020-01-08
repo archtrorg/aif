@@ -2116,9 +2116,7 @@ install_de_wm() {
 
 		# Offer to install various "common" packages.
 		dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title " $_InstComTitle " --checklist "$_InstComBody $_UseSpaceBar" 0 50 14 \
-		"bash-completion" "-" on \
-		"gamin" "-" on \
-		"gksu" "-" on \
+		"bash-completion" "-" on \		
 		"gnome-icon-theme" "-" on \
 		"gnome-keyring" "-" on \
 		"gvfs" "-" on \
